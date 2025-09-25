@@ -1,0 +1,103 @@
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Code2, Database, Globe, Layers } from "lucide-react";
+
+const SkillsSection = () => {
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      icon: Code2,
+      skills: ["Java", "Python", "JavaScript"],
+      description: "Core programming languages I use to build robust applications"
+    },
+    {
+      title: "Frontend Technologies", 
+      icon: Globe,
+      skills: ["HTML5", "CSS3", "React", "TypeScript"],
+      description: "Creating engaging and responsive user interfaces"
+    },
+    {
+      title: "Backend & Frameworks",
+      icon: Database,
+      skills: ["Spring Boot", "Django", "Node.js", "REST APIs"],
+      description: "Building scalable server-side applications and APIs"
+    },
+    {
+      title: "Tools & Technologies",
+      icon: Layers,
+      skills: ["Git", "Docker", "MySQL", "MongoDB"],
+      description: "Essential tools for development and deployment"
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-20 gradient-subtle">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            Technical Skills
+          </h2>
+          <div className="w-20 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <p className="text-xl text-muted-foreground mt-6 max-w-2xl mx-auto">
+            Here are the technologies and tools I use to bring ideas to life
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {skillCategories.map((category, index) => (
+            <Card 
+              key={category.title} 
+              className="p-6 shadow-elegant border-border/50 hover:shadow-accent hover:border-primary/30 transition-smooth group animate-scale-in"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:shadow-glow transition-smooth">
+                  <category.icon className="w-8 h-8 text-primary-foreground" />
+                </div>
+                
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-smooth">
+                  {category.title}
+                </h3>
+                
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  {category.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {category.skills.map((skill) => (
+                    <Badge 
+                      key={skill} 
+                      variant="secondary" 
+                      className="bg-secondary/50 hover:bg-gradient-primary hover:text-primary-foreground transition-smooth cursor-default"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <div className="inline-block">
+            <h3 className="text-2xl font-semibold mb-6">Always Learning</h3>
+            <div className="flex flex-wrap gap-3 justify-center">
+              {["React Native", "GraphQL", "AWS", "Kubernetes", "Machine Learning"].map((skill) => (
+                <Badge 
+                  key={skill} 
+                  variant="outline" 
+                  className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
