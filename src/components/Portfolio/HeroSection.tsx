@@ -51,9 +51,7 @@ const HeroSection = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary hover:shadow-accent transition-smooth">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:contact@nikunjkapil.com" className="p-3 rounded-full border border-border hover:border-primary hover:shadow-accent transition-smooth">
-                <Mail className="w-6 h-6" />
-              </a>
+              
             </div>
           </div>
         </div>
