@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -17,7 +18,11 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
       
       <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in">
-        <div className="animate-scale-in">
+        <div className="animate-scale-in mb-8">
+          <Avatar className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-8 ring-4 ring-primary/20 shadow-glow">
+            <AvatarImage src="/placeholder.svg" alt="Nikunj Kapil" />
+            <AvatarFallback className="text-3xl font-bold bg-gradient-primary text-white">NK</AvatarFallback>
+          </Avatar>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
             Nikunj Kapil
           </h1>
