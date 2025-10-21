@@ -1,41 +1,40 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Code2 } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with Java Spring Boot and React, featuring user authentication, payment integration, and admin dashboard.",
-      technologies: ["Java", "Spring Boot", "React", "MySQL", "REST API"],
+      title: "ThreatGuard: Browser Extension for Real-Time Web Security",
+      description: "Developed a browser extension to proactively detect and block phishing websites, ransomware, and data leaks in real-time. Leveraged Google Safe Browsing and VirusTotal APIs to perform real-time scanning of URLs and files for malicious content detection.",
+      technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Google Safe Browsing API", "VirusTotal API"],
       status: "completed",
-      githubUrl: "#",
-      liveUrl: "#"
+      date: "September 2024",
+      isPrivate: true
     },
     {
-      title: "Task Management System",
-      description: "A collaborative task management web application with real-time updates, built using Python Django and JavaScript for seamless user experience.",
-      technologies: ["Python", "Django", "JavaScript", "PostgreSQL", "WebSocket"],
+      title: "Content Recommendation System Using Real-time Face Detection",
+      description: "Developed a real-time face detection system to determine user age and filter content accordingly. Implemented machine learning algorithms to classify content and restrict inappropriate material for minors. Integrated with YouTube and Instagram APIs to dynamically control content visibility.",
+      technologies: ["Python", "OpenCV", "YouTube Data API", "Instagram Graph API", "Machine Learning"],
       status: "completed", 
-      githubUrl: "#",
-      liveUrl: "#"
+      date: "February 2025",
+      isPrivate: true
     },
     {
-      title: "Weather Dashboard",
-      description: "An interactive weather dashboard that displays real-time weather data with beautiful visualizations using vanilla JavaScript and CSS animations.",
-      technologies: ["JavaScript", "HTML5", "CSS3", "Weather API", "Chart.js"],
+      title: "Firewall System in Python",
+      description: "Built a custom firewall system using Python to monitor and control network traffic. Implemented packet filtering, intrusion detection, and logging mechanisms to enhance network security and protect against unauthorized access.",
+      technologies: ["Python", "Socket Programming", "Network Security", "Packet Analysis"],
       status: "completed",
-      githubUrl: "#",
-      liveUrl: "#"
+      date: "2024",
+      isPrivate: true
     },
     {
-      title: "Portfolio Analytics",
-      description: "A data analytics dashboard for tracking portfolio performance using Python for data processing and web technologies for visualization.",
-      technologies: ["Python", "Pandas", "JavaScript", "D3.js", "Flask"],
-      status: "in-progress",
-      githubUrl: "#",
-      liveUrl: null
+      title: "E-Learning Platform",
+      description: "Developed a comprehensive e-learning platform with course management, video streaming, user progress tracking, and interactive quizzes. Features include user authentication, admin dashboard, and real-time notifications for enhanced learning experience.",
+      technologies: ["Java", "Spring Boot", "MySQL", "React", "REST API"],
+      status: "completed",
+      date: "2024",
+      isPrivate: true
     }
   ];
 
@@ -60,14 +59,17 @@ const ProjectsSection = () => {
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="space-y-4">
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between flex-wrap gap-3">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-smooth">
                       <Code2 className="w-5 h-5 text-primary-foreground" />
                     </div>
-                    <h3 className="text-xl font-semibold group-hover:text-primary transition-smooth">
-                      {project.title}
-                    </h3>
+                    <div>
+                      <h3 className="text-xl font-semibold group-hover:text-primary transition-smooth">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{project.date}</p>
+                    </div>
                   </div>
                   <Badge 
                     variant={project.status === 'completed' ? 'default' : 'secondary'}
@@ -97,30 +99,20 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-3 pt-2">
-                  <Button 
+                  <Badge 
                     variant="outline" 
-                    size="sm"
-                    className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
-                    asChild
+                    className="border-border/50 text-muted-foreground px-3 py-1.5"
                   >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  {project.liveUrl && (
-                    <Button 
-                      variant="default"
-                      size="sm"
-                      className="bg-gradient-primary hover:shadow-glow transition-smooth"
-                      asChild
-                    >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Live Demo
-                      </a>
-                    </Button>
-                  )}
+                    <Github className="w-3 h-3 mr-2" />
+                    Private Repository
+                  </Badge>
+                  <Badge 
+                    variant="outline" 
+                    className="border-border/50 text-muted-foreground px-3 py-1.5"
+                  >
+                    <ExternalLink className="w-3 h-3 mr-2" />
+                    In Development
+                  </Badge>
                 </div>
               </div>
             </Card>
@@ -128,17 +120,9 @@ const ProjectsSection = () => {
         </div>
         
         <div className="text-center mt-12">
-          <Button 
-            variant="outline"
-            size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
-            asChild
-          >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5 mr-2" />
-              View All Projects on GitHub
-            </a>
-          </Button>
+          <p className="text-muted-foreground">
+            More projects coming soon! Currently working on open-sourcing selected projects.
+          </p>
         </div>
       </div>
     </section>
