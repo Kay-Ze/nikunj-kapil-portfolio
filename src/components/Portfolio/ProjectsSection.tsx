@@ -25,7 +25,7 @@ const ProjectsSection = () => {
       description: "Built a custom firewall system using Python to monitor and control network traffic. Implemented packet filtering, intrusion detection, and logging mechanisms to enhance network security and protect against unauthorized access.",
       technologies: ["Python", "Socket Programming", "Network Security", "Packet Analysis"],
       status: "completed",
-      date: "2024",
+      date: "2025",
       isPrivate: true
     },
     {
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
       description: "Developed a comprehensive e-learning platform with course management, video streaming, user progress tracking, and interactive quizzes. Features include user authentication, admin dashboard, and real-time notifications for enhanced learning experience.",
       technologies: ["Java", "Spring Boot", "MySQL", "React", "REST API"],
       status: "completed",
-      date: "2024",
+      date: "2025",
       isPrivate: true
     }
   ];

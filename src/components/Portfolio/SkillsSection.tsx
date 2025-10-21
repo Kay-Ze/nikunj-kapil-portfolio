@@ -5,23 +5,23 @@ const SkillsSection = () => {
   const skillCategories = [{
     title: "Programming Languages",
     icon: Code2,
-    skills: ["Java", "Python", "JavaScript"],
+    skills: ["Java", "Python", "JavaScript", "SQL"],
     description: "Core programming languages I use to build robust applications"
   }, {
-    title: "Frontend Technologies",
+    title: "Web Technologies",
     icon: Globe,
-    skills: ["HTML5", "CSS3", "React", "TypeScript"],
+    skills: ["HTML", "CSS", "Node.js", "Servlets"],
     description: "Creating engaging and responsive user interfaces"
   }, {
-    title: "Backend & Frameworks",
+    title: "Database Systems",
     icon: Database,
-    skills: ["Spring Boot", "Django", "Node.js", "REST APIs"],
-    description: "Building scalable server-side applications and APIs"
+    skills: ["SQL", "MySQL"],
+    description: "Managing and designing database solutions"
   }, {
-    title: "Tools & Technologies",
+    title: "Developer Tools",
     icon: Layers,
-    skills: ["Git", "Docker", "MySQL", "MongoDB"],
-    description: "Essential tools for development and deployment"
+    skills: ["Git", "GitHub", "IntelliJ", "PyCharm", "VS Code"],
+    description: "Essential tools for development and version control"
   }];
   return <section id="skills" className="py-20 gradient-subtle">
       <div className="container mx-auto px-6">
