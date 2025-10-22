@@ -223,3 +223,56 @@ All colors MUST be HSL.
     transform: scale(1);
   }
 }
+
+@layer components {
+  /* This is where you add the animation code */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 20px); /* Start lower */
+    }
+    15% {
+      opacity: 1;
+      transform: translate(-50%, 0); /* Fade in and move up */
+    }
+    85% {
+      opacity: 1;
+      transform: translate(-50%, 0); /* Stay visible */
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, 20px); /* Fade out and move down */
+    }
+  }
+
+  .animate-fade-in-out {
+    /* The animation duration (3s) must match your setTimeout */
+    animation: fadeInOut 3s ease-in-out forwards;
+  }
+}
+
+/* Add this to your global CSS file */
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20px); /* Start lower */
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Fade in and move up */
+  }
+  85% {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Stay visible */
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px); /* Fade out and move down */
+  }
+}
+
+.animate-fade-in-out {
+  /* The animation duration (3s) must match your setTimeout */
+  animation: fadeInOut 3s ease-in-out forwards;
+}
