@@ -4,26 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MessageSquare, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
+  // FormSubmit.co handles the submission directly
 
   const contactInfo = [
     {
@@ -69,15 +52,14 @@ const ContactSection = () => {
               <h3 className="text-2xl font-semibold">Send a Message</h3>
             </div>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formsubmit.co/nikunjkapil279@gmail.com" method="POST" className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
                 <Input
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Your full name"
-                  value={formData.name}
-                  onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                   className="border-border focus:border-primary transition-smooth"
                   required
                 />
@@ -87,10 +69,9 @@ const ContactSection = () => {
                 <Label htmlFor="email">Email</Label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="your.email@example.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                   className="border-border focus:border-primary transition-smooth"
                   required
                 />
@@ -100,14 +81,18 @@ const ContactSection = () => {
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Tell me about your project or just say hello..."
                   rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
                   className="border-border focus:border-primary transition-smooth resize-none"
                   required
                 />
               </div>
+              
+              {/* FormSubmit.co Configuration */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+              <input type="hidden" name="_template" value="table" />
               
               <Button 
                 type="submit"
