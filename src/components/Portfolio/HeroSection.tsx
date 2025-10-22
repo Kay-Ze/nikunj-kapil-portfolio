@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Avatar on the left */}
           <div className="animate-scale-in">
             <Avatar className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 ring-4 ring-primary/20 shadow-glow">
-              <AvatarImage src="/placeholder.svg" alt="Nikunj Kapil" />
+              <AvatarImage src="/profile.jpg" alt="Nikunj Kapil" />
               <AvatarFallback className="text-5xl md:text-6xl font-bold bg-gradient-primary text-white">NK</AvatarFallback>
             </Avatar>
           </div>
