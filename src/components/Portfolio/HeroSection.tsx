@@ -33,7 +33,7 @@ const HeroSection = () => {
             <h2 className="text-2xl md:text-3xl font-light mb-8 text-muted-foreground">
               Software Developer
             </h2>
-            <p className="text-lg md:text-xl mb-12 text-foreground/80">Aspiring Software Developer with a strong interest in cybersecurity. Seeking an internship to leverage my skills in full-stack development and secure coding practices to contribute to building safe, robust, and reliable systems.</p>
+            <p className="text-lg md:text-xl mb-12 text-foreground/80">Aspiring software developer passionate about solving complex problems. I use my full-stack skills to build efficient, scalable, and user-friendly applications that deliver real-world value. I thrive on learning new technologies and contributing to innovative projects.</p>
             
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-12 animate-slide-up">
               <Button variant="default" size="lg" className="bg-gradient-primary hover:shadow-glow transition-smooth" onClick={() => scrollToSection('projects')}>
