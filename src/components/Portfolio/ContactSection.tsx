@@ -29,14 +29,14 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "nikunj.kapil@email.com",
-      link: "mailto:nikunj.kapil@email.com"
+      value: "nikunjkapil279@gmail.com",
+      link: "mailto:nikunjkapil279@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 9690398773",
+      link: "tel:+919690398773"
     },
     {
       icon: MapPin,
