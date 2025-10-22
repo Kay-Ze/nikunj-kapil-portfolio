@@ -55,7 +55,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('hero')}
               className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-smooth"
             >
-              NK
+              <img src="/logo.png" alt="NIKUNJ" className="h-8 w-auto" />
             </button>
             
             {/* Desktop Navigation */}
