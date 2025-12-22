@@ -204,7 +204,7 @@ const ContactSection = () => {
                   <span className="font-medium">GitHub</span>
                 </a>
                 <a  
-                  href="https://linkedin.com/nikunj-kapil-23972a2bb"
+                  href="https://www.linkedin.com/in/nikunj-kapil-23972a2bb/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary hover:shadow-accent transition-smooth group"
