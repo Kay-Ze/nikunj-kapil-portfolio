@@ -12,8 +12,7 @@ const ProjectsSection = () => {
       status: "completed",
       date: "2025",
       isPrivate: true
-    }
-    
+    },
     {
       title: "ThreatGuard: Browser Extension for Real-Time Web Security",
       description: "Developed a browser extension to proactively detect and block phishing websites, ransomware, and data leaks in real-time. Leveraged Google Safe Browsing and VirusTotal APIs to perform real-time scanning of URLs and files for malicious content detection.",
