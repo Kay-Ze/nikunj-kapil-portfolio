@@ -4,6 +4,16 @@ import { ExternalLink, Github, Code2 } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
+
+    {
+      title: "Cognimation",
+      description: "Developed a voice-interactive AI tutor that integrates a 3D Spline avatar with Generative AI to deliver real-time, narrated explanations alongside dynamically synthesized educational images.",
+      technologies: ["Pyhton", "React", "Stability API", "Cereberus SDK", "3D Spline"],
+      status: "completed",
+      date: "2025",
+      isPrivate: true
+    }
+    
     {
       title: "ThreatGuard: Browser Extension for Real-Time Web Security",
       description: "Developed a browser extension to proactively detect and block phishing websites, ransomware, and data leaks in real-time. Leveraged Google Safe Browsing and VirusTotal APIs to perform real-time scanning of URLs and files for malicious content detection.",
@@ -28,14 +38,7 @@ const ProjectsSection = () => {
       date: "2025",
       isPrivate: true
     },
-    {
-      title: "E-Learning Platform",
-      description: "Developed a comprehensive e-learning platform with course management, video streaming, user progress tracking, and interactive quizzes. Features include user authentication, admin dashboard, and real-time notifications for enhanced learning experience.",
-      technologies: ["Java", "Spring Boot", "MySQL", "React", "REST API"],
-      status: "completed",
-      date: "2025",
-      isPrivate: true
-    }
+    
   ];
 
   return (
