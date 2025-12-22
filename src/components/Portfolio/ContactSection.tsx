@@ -195,7 +195,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-semibold mb-6">Follow Me</h3>
               <div className="flex gap-4">
                 <a  
-                  href="https://github.com"
+                  href="https://github.com/Kay-Ze"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary hover:shadow-accent transition-smooth group"
@@ -204,7 +204,7 @@ const ContactSection = () => {
                   <span className="font-medium">GitHub</span>
                 </a>
                 <a  
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/nikunj-kapil-23972a2bb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary hover:shadow-accent transition-smooth group"
