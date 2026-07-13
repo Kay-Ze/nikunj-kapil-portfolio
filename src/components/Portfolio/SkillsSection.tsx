@@ -8,14 +8,14 @@ const SkillsSection = () => {
     skills: ["Java", "Python", "JavaScript", "SQL"],
     description: "Core programming languages I use to build robust applications"
   }, {
-    title: "Web Technologies",
+    title: "Full Stack Technologies",
     icon: Globe,
-    skills: ["HTML", "CSS", "Node.js", "Servlets"],
+    skills: ["HTML", "CSS", "Node.js", "React.js", "Express.js", "JWT"],
     description: "Creating engaging and responsive user interfaces"
   }, {
     title: "Database Systems",
     icon: Database,
-    skills: ["SQL", "MySQL"],
+    skills: ["SQL", "MySQL", "MongoDB"],
     description: "Managing and designing database solutions"
   }, {
     title: "Developer Tools",
