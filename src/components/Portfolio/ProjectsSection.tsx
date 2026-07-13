@@ -6,7 +6,34 @@ const ProjectsSection = () => {
   const projects = [
 
     {
-      title: "Cognimation",
+      title: "TeamIntel AI : B2B Engineering Intelligence Platform",
+      description: "Engineered the complete backend for a B2B engineering intelligence platform using a scalable, domain-driven Node.js architecture[cite: 1]. Built a custom 90/10 weighted progress engine integrated with GitHub webhooks for automated tracking, implemented HTTP-only JWTs for secure role-based access, and utilized Gemini AI to generate automated executive summaries[cite: 1]. Currently conducting comprehensive API testing.",
+      technologies: ["Node.js", "Express.js","React.js", "MongoDB", "GitHub Webhooks", "Gemini AI", "JWT", "REST API",  "Tailwind CSS"],
+      status: "testing",
+      date: "July 2026",
+      isPrivate: true
+    },
+
+    {
+      title: "SmartGuard: AI- Driven Framework for Automated Threat Recognition",
+      description: " Built a real-time surveillance pipeline using YOLO11n for person detection and a fine-tuned YOLO11s weapon model trained on a merged gun and knife dataset, with ByteTrack assigning persistent IDs and a State Manager tracking per-person zone timers and alert flags.",
+      technologies: ["Python", "OpenCV", "Ultralytics YOLO11", "ByteTrack", "Google Colab"],
+      status: "completed",
+      date: " June 2026",
+      isPrivate: true
+    },
+
+    {
+      title: "SnapFeed : A Full Stack Web Application",
+      description: "Built a mobile-first full-stack image feed application enabling users to upload photos with captions and browse them in a scrollable personal feed, using React and Tailwind CSS for a responsive UI with seamless client-side navigation via React Router DOM.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "ImageKit", "Multer", "Tailwind CSS", "Axios"],
+      status: "completed",
+      date: "May 2026",
+      isPrivate: true
+    },
+    
+    {
+      title: "Cognimation: AI-Powered Interactive Virtual Tutor",
       description: "Developed a voice-interactive AI tutor that integrates a 3D Spline avatar with Generative AI to deliver real-time, narrated explanations alongside dynamically synthesized educational images.",
       technologies: ["Pyhton", "React", "Stability API", "Cereberus SDK", "3D Spline"],
       status: "completed",
@@ -27,14 +54,6 @@ const ProjectsSection = () => {
       technologies: ["Python", "OpenCV", "YouTube Data API", "Instagram Graph API", "Machine Learning"],
       status: "completed", 
       date: "February 2025",
-      isPrivate: true
-    },
-    {
-      title: "Firewall System in Python",
-      description: "Built a custom firewall system using Python to monitor and control network traffic. Implemented packet filtering, intrusion detection, and logging mechanisms to enhance network security and protect against unauthorized access.",
-      technologies: ["Python", "Socket Programming", "Network Security", "Packet Analysis"],
-      status: "completed",
-      date: "2025",
       isPrivate: true
     },
     
