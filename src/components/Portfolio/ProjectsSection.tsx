@@ -7,7 +7,7 @@ const ProjectsSection = () => {
 
     {
       title: "TeamIntel AI : B2B Engineering Intelligence Platform",
-      description: "Engineered the complete backend for a B2B engineering intelligence platform using a scalable, domain-driven Node.js architecture[cite: 1]. Built a custom 90/10 weighted progress engine integrated with GitHub webhooks for automated tracking, implemented HTTP-only JWTs for secure role-based access, and utilized Gemini AI to generate automated executive summaries[cite: 1]. Currently conducting comprehensive API testing.",
+      description: "Engineered the complete backend for a B2B engineering intelligence platform using a scalable, domain-driven Node.js architecture. Built a custom 90/10 weighted progress engine integrated with GitHub webhooks for automated tracking, implemented HTTP-only JWTs for secure role-based access, and utilized Gemini AI to generate automated executive summaries.",
       technologies: ["Node.js", "Express.js","React.js", "MongoDB", "GitHub Webhooks", "Gemini AI", "JWT", "REST API",  "Tailwind CSS"],
       status: "testing",
       date: "July 2026",
