@@ -10,7 +10,7 @@ const SkillsSection = () => {
   }, {
     title: "Full Stack Technologies",
     icon: Globe,
-    skills: ["HTML", "CSS", "Node.js", "React.js", "Express.js", "JWT"],
+    skills: ["HTML", "Tailwind CSS", "Node.js", "React.js", "Express.js", "JWT"],
     description: "Creating engaging and responsive user interfaces"
   }, {
     title: "Database Systems",
